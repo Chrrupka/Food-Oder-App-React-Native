@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585475656434",
+    "project_id": "eatitapp-430bd",
+    "storage_bucket": "eatitapp-430bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585475656434:android:bfa24dc5ada57ad718de6b",
+        "android_client_info": {
+          "package_name": "com.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585475656434-e6eiqjck5s5snsfepvn1eco49k9msqob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_rtFkytxL1rnAVuCbDMHHtCt3q3SWwHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585475656434-e6eiqjck5s5snsfepvn1eco49k9msqob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
