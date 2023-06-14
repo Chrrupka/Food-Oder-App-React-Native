@@ -14,6 +14,7 @@ GoogleSignin.configure({
 });
 
 
+
 export default function SignInScreen({navigation}){
 
   const {dispatchSingedIn} = useContext(SignInContext)
@@ -28,8 +29,9 @@ export default function SignInScreen({navigation}){
       const { password, mail } = data
       const user = await auth().signInWithEmailAndPassword(mail, password)
       if (user) {
-        navigation.navigate("HomeScreen")
-
+        navigation.navigate("RootClientTabs")
+  /*      console.log("Signed in")
+        dispatchSingedIn({type:"UPDATE_SIGN_IN", payload:{userToken:"signed-in"}})*/
       }
     }catch(error){
       //console.log(error)

@@ -2,7 +2,7 @@ import { createStackNavigator, TransitionPresets } from "@react-navigation/stack
 
 import React from "react";
 import WelcomeScreen from "../screens/authScreens/WelcomeScreen";
-import HomeScreen from "../screens/authScreens/HomeScreen";
+import HomeScreen from "../screens/HomeScreen";
 
 const App = createStackNavigator();
 
