@@ -1,4 +1,3 @@
-/*
 import { Icon } from 'react-native-elements';
 import {colors, parameters} from '../global/styles';
 import React from 'react';
@@ -20,36 +19,10 @@ export default function FoodCard({ OnPressFoodCard, restaurantName, deliveryAvai
           </View>
 
           <View style ={{flex:1, flexDirection:"row"}}>
-
-            <View style ={styles.distance}>
-              <Icon
-                name='place'
-                type='material'
-                color= {colors.grey2}
-                size ={18}
-                iconStyle ={{
-                  marginTop:3
-                }}
-              />
-              <Text style ={styles.Min}> {farAway} Min</Text>
-            </View>
-
-            <View style ={{flex:9, flexDirection:"row"}}>
-              <Text style ={styles.address}>{businessAddress}</Text>
-            </View>
-
           </View>
         </View>
-
       </View>
 
-
-
-
-      <View style ={styles.review}>
-        <Text style ={styles.average}>{averageReview}</Text>
-        <Text style ={styles.numberOfReview}>{numberOfReview} reviews</Text>
-      </View>
     </TouchableOpacity>
   )
 
@@ -123,4 +96,3 @@ const styles = StyleSheet.create({
     marginLeft:0
   }
 })
-*/

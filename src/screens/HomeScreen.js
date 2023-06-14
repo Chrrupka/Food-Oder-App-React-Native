@@ -14,8 +14,10 @@ import { colors } from "../global/styles";
 import Header from "../components/Header";
 import { title } from "../global/styles";
 import HomeHeader from "../components/HomeHeader";
-import { filterData } from "../global/Data";
+import { filterData, menuDetailedData, productData, restaurantsData } from "../global/Data";
 import React, { useState } from "react";
+import FoodCard from "../components/FoodCard";
+import ProductCard from "../components/ProductCart";
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 export default function HomeScreen({navigation}) {
@@ -64,6 +66,32 @@ export default function HomeScreen({navigation}) {
         <View style ={styles.headerTextView}>
           <Text style ={styles.headerText}>Proponowane</Text>
         </View>
+
+
+        <View>
+
+          <FlatList
+            style ={{marginTop:10, marginBottom:10}}
+            horizontal ={false}
+            data = {productData}
+            keyExtractor = {(item,index)=>index.toString()}
+
+            renderItem = {({item})=>(
+              <View style ={{margin:5}}>
+                <ProductCard
+                  screenWidth  ={SCREEN_WIDTH*0.8}
+                  image={item.image}
+                  productName={item.name}
+                  price = {item.price}
+
+
+                />
+              </View>
+            )}
+          />
+        </View>
+
+
 
       </ScrollView>
     </View>
